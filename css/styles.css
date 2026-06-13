@@ -1,3 +1,7 @@
+/* ========================================
+   Template style, Don not change it!
+   ======================================== */
+
 :root {
 
     --blue: #2563eb;
@@ -106,20 +110,141 @@ nav a {
     transition: .3s;
 }
 
-nav a:hover {
+/* VISION */
+
+.vision {
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue-light, #6c9ebf),
+            var(--purple-light, #9b7bb5));
+
+    color: white;
+
+    text-align: center;
+}
+
+.vision h2 {
+
+    color: white;
+}
+
+.btn-secondary {
+
+    display: inline-block;
+
+    margin-top: 25px;
+
+    background: white;
 
     color: var(--purple);
+
+    text-decoration: none;
+
+    padding: 14px 30px;
+
+    border-radius: 50px;
+
+    font-weight: 600;
 }
 
-.giving-btn {
+/* FOOTER */
 
-    background: var(--purple);
-    color: white !important;
+footer {
 
-    padding: 10px 20px;
+    background: #e8f0fe;
 
-    border-radius: 30px;
+    color: black;
+
+    padding-top: 60px;
 }
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    align-items: start;
+}
+
+.footer-grid > div {
+    text-align: center;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: row;   /* Horizontal layout */
+    flex-wrap: nowrap;     /* Prevents wrapping to new line */
+    gap: 1.0rem;             /* Space between icons (adjust as needed) */
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer h3,
+footer h4 {
+
+    margin-bottom: 10px;
+}
+
+.copyright {
+
+    margin-top: 40px;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-top: 3px solid rgba(0,0,255,.1);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .header .container{
+
+        flex-direction: column;
+    }
+
+    nav ul{
+
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .hero h1{
+
+        font-size: 2.5rem;
+    }
+
+    .hero p{
+
+        font-size: 1rem;
+    }
+}
+
+
+/* ========================================
+===========================================
+   Home Page style
+===========================================
+=========================================== */
 
 /* HERO */
 
@@ -337,9 +462,7 @@ section h2 {
     color: var(--blue);
 }
 
-/* ========================================
-   Cards Section
-   ======================================== */
+/* Cards Section */
 
 .cards-grid {
     display: flex;
@@ -424,92 +547,237 @@ section h2 {
     font-weight: 600;
 }
 
-/* FOOTER */
 
-footer {
+/* ========================================
+   About Page style
+   ======================================== */
 
-    background: #e8f0fe;
-
-    color: black;
-
-    padding-top: 60px;
-}
-
-.footer-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    align-items: start;
-}
-
-.footer-grid > div {
-    text-align: center;
-}
-
-.social-icons img {
-    width: 40px;
-    height: 40px;
-}
-
-.social-icons {
+/* ABOUT HERO SECTION */
+.about-hero {
+    background: linear-gradient(rgba(37, 99, 235, 0.5), rgba(124, 58, 237, 0.55)), url('../images/mountain.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 400px;
     display: flex;
-    flex-direction: row;   /* Horizontal layout */
-    flex-wrap: nowrap;     /* Prevents wrapping to new line */
-    gap: 1.0rem;             /* Space between icons (adjust as needed) */
-    justify-content: center;
     align-items: center;
-    list-style: none;
-    padding: 0;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+    border-radius: 0 0 30px 30px;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.95;
+}
+
+/* ABOUT CONTENT SECTION */
+.about-section {
+    padding: 2rem 0 4rem 0;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 2.5rem;
+    border-radius: 24px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+.about-content h2 {
+    color: var(--blue, #2563eb);
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.about-content p {
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 1.2rem;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* BELIEFS SECTION (Accordion) */
+.beliefs-section {
+    padding: 4rem 0;
+    background: var(--gray, #f8fafc);
+}
+
+.beliefs-section h2 {
+    text-align: center;
+    color: var(--blue, #2563eb);
+    margin-bottom: 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.belief-card {
+    background: white;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(124, 58, 237, 0.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.belief-header {
+    background: linear-gradient(135deg, #e8e8f0, #f0f0f8);
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.belief-header:hover {
+    background: linear-gradient(135deg, #dddde8, #e8e8f0);
+}
+
+.belief-header h3 {
+    color: #444;
     margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
-.social-icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.toggle-icon {
+    color: #666;
+    font-size: 0.9rem;
+    transition: transform 0.3s ease;
 }
 
-footer h3,
-footer h4 {
-
-    margin-bottom: 10px;
+.belief-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background: white;
+    padding: 0 1.5rem;
 }
 
-.copyright {
-
-    margin-top: 40px;
-
-    text-align: center;
-
-    padding: 20px;
-
-    border-top: 3px solid rgba(0,0,255,.1);
+.belief-content.active {
+    max-height: 500px;
+    padding: 1.5rem;
 }
 
-/* MOBILE */
+.belief-content p {
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 0.8rem;
+}
 
-@media(max-width:768px){
+.belief-content .scripture {
+    color: var(--purple, #7c3aed);
+    font-style: italic;
+    margin-top: 0.8rem;
+    font-size: 0.9rem;
+    padding-top: 0.5rem;
+    border-top: 1px dashed rgba(124, 58, 237, 0.2);
+}
 
-    .header .container{
+/* Light Grey Button for Belief Section */
+.btn-soft-grey {
+    background: linear-gradient(135deg, #e8e8f0, #f0f0f8);
+    color: #555;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
 
-        flex-direction: column;
+.btn-soft-grey:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #dddde8, #e8e8f0);
+    color: #333;
+}
+
+/* RESPONSIVE ADJUSTMENTS FOR ABOUT PAGE */
+@media (max-width: 768px) {
+    .about-hero {
+        min-height: 280px;
+        padding: 2rem 0;
+        margin-bottom: 2rem;
     }
-
-    nav ul{
-
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 15px;
-        gap: 15px;
+    
+    .about-hero h1 {
+        font-size: 2rem;
     }
-
-    .hero h1{
-
-        font-size: 2.5rem;
-    }
-
-    .hero p{
-
+    
+    .about-hero p {
         font-size: 1rem;
     }
+    
+    .about-content {
+        padding: 1.5rem;
+        margin: 0 1rem;
+    }
+    
+    .about-content h2 {
+        font-size: 1.5rem;
+    }
+    
+    .beliefs-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .belief-header h3 {
+        font-size: 0.95rem;
+    }
+    
+    .belief-header {
+        padding: 0.8rem 1.2rem;
+    }
+    
+    .belief-content.active {
+        padding: 1rem;
+    }
+    
+    .btn-soft-grey {
+        padding: 8px 22px;
+        font-size: 0.9rem;
+    }
 }
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 1.6rem;
+    }
+    
+    .about-hero p {
+        font-size: 0.85rem;
+    }
+    
+    .beliefs-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .belief-header h3 {
+        font-size: 0.85rem;
+    }
+}
+
+	
+	
+
