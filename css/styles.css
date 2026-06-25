@@ -1531,6 +1531,11 @@ margin-bottom: 1rem;
 }
 
 @media (max-width: 480px) {
+
+     .events-hero {
+        margin-top: 5.5rem;
+ 
+    }
     .events-hero h1 {
         font-size: 1.6rem;
     }
@@ -2012,6 +2017,10 @@ margin-bottom: 1rem;
 }
 
 @media (max-width: 480px) {
+
+        .contact-hero{
+        margin-top: 7rem;
+    }
     .contact-hero h1 {
         font-size: 1.6rem;
     }
