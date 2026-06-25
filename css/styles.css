@@ -1233,6 +1233,7 @@ margin-bottom: 1rem;
     justify-content: center;
     text-align: center;
     padding: 4rem 0;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     border-radius: 0 0 30px 30px;
 }
@@ -1493,6 +1494,7 @@ margin-bottom: 1rem;
 
 @media (max-width: 768px) {
     .events-hero {
+        margin-top: 3.5rem;
         min-height: 250px;
         padding: 2.5rem 0;
     }
