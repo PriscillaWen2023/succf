@@ -1572,6 +1572,7 @@ margin-bottom: 1rem;
     text-align: center;
     padding: 3rem 0;
     margin-bottom: 2.5rem;
+    
     border-radius: 0 0 30px 30px;
 }
 
@@ -1911,6 +1912,10 @@ margin-bottom: 1rem;
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
+
+    .contact-hero{
+        margin-top: 2.5rem;
+    }
     .contact-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -1922,6 +1927,10 @@ margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
+
+    .contact-hero{
+        margin-top: 5rem;
+    }
     .contact-hero {
         min-height: 200px;
         padding: 2rem 0;
@@ -2306,6 +2315,10 @@ margin-bottom: 1rem;
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
+
+    .giving-hero {
+        margin-top: 2.5rem;
+    }
     .giving-grid {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -2370,13 +2383,20 @@ margin-bottom: 1rem;
 }
 
 @media (max-width: 480px) {
+
+    .giving-hero {
+        margin-top: 4.5rem;
+    }
+
+
     .giving-hero h1 {
-        font-size: 1.6rem;
+        font-size: 1rem;
+
     }
     
     .giving-intro h2,
     .giving-how h2 {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
     }
     
     .giving-list li {
