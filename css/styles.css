@@ -1142,7 +1142,7 @@ section h2 {
     background:
         linear-gradient(
             rgba(37,99,235,.50),
-            rgba(124,58,237,.55)
+            rgba(124,58,237,.50)
         ),
         url("../images/ministries-heropic.png");
 
@@ -1244,6 +1244,7 @@ margin-bottom: 1rem;
     .ministries-hero p{
         font-size: 1rem;
         line-height: 1.7;
+		max-width:100%;
         padding: 0 10px;
     }
 
