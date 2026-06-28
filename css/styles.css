@@ -1302,21 +1302,29 @@ margin-bottom: 1rem;
 ========================================================================================================================== */
 /* EVENTS HERO */
 .events-hero {
-    background: linear-gradient(rgba(37, 99, 235, 0.5), rgba(124, 58, 237, 0.55)), 
-		url('../images/events-heropic.png');
+    background:
+        linear-gradient(
+            rgba(37,99,235,.50),
+            rgba(124,58,237,.55)
+        ),
+        url("../images/events-heropic.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 45vh;
+    max-height: 520px;
+
     display:flex;
     justify-content:center;
     align-items:center;
 
     text-align:center;
 
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    min-height:400px;
-
     padding:5rem 1rem;
+
+    margin-bottom:3rem;
 
     border-radius:0 0 30px 30px;
 }
