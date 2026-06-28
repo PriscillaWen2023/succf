@@ -1137,29 +1137,33 @@ section h2 {
 ==========================================================================================================================
 ========================================================================================================================== */
 /* MINISTRIES HERO */
-.ministries-hero {
+.ministries-hero{
+
     background:
         linear-gradient(
-            rgba(37, 99, 235, 0.50),
-            rgba(124, 58, 237, 0.55)
+            rgba(37,99,235,.50),
+            rgba(124,58,237,.55)
         ),
-        url('../images/ministries-heropic.png');
+        url("../images/ministries-heropic.png");
 
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
 
-    min-height: 400px;
+    min-height: 45vh;
+    max-height: 520px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-    text-align: center;
-    padding: 4rem 0;
-    margin-bottom: 3rem;
+    text-align:center;
 
-    border-radius: 0 0 30px 30px;
+    padding:5rem 1rem;
+
+    margin-bottom:3rem;
+
+    border-radius:0 0 30px 30px;
 }
 
 .ministries-hero h1 {
@@ -1227,38 +1231,58 @@ color: #444;
 margin-bottom: 1rem;
 }
 
-/* MOBILE */
+/* ---- MOBILE ----- */
 @media (max-width: 768px) {
 
-.page-hero h1 {
-    font-size: 2.2rem;
-}
-
-.ministry-card,
-.ministry-card.reverse {
-    flex-direction: column;
-}
-
-.ministry-image img {
-    max-width: 100%;
-}
-
-}
-
-@media (max-width: 768px) {
-
-    .page-hero {
-        min-height: 320px;
+    .ministries-hero{
+        min-height: 220px;
+        padding: 80px 16px 40px; /* reduced top padding for mobile */
+        margin-bottom: 1.5rem;
+        border-radius: 0 0 18px 18px;
     }
 
-    .page-hero h1 {
-        font-size: 2.3rem;
+    .ministries-hero h1{
+        font-size: 2.2rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
     }
 
-    .page-hero p {
+    .ministries-hero p{
         font-size: 1rem;
-        padding: 0 1rem;
+        line-height: 1.6;
+        padding: 0 10px;
     }
+
+    .ministry-card,
+    .ministry-card.reverse{
+        flex-direction: column;
+        padding: 1rem; /* make cards more compact on mobile */
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .ministry-image img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+    }
+
+    .ministry-text{
+        padding: 0.25rem 0;
+    }
+
+    .ministry-text h2{
+        font-size: 1.4rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .ministry-text p{
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
 }
 
 /* =======================================================================================================================
