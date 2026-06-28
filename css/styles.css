@@ -1138,11 +1138,10 @@ section h2 {
 ========================================================================================================================== */
 /* MINISTRIES HERO */
 .ministries-hero{
-
     background:
         linear-gradient(
             rgba(37,99,235,.50),
-            rgba(124,58,237,.50)
+            rgba(124,58,237,.55)
         ),
         url("../images/ministries-heropic.png");
 
@@ -1150,17 +1149,18 @@ section h2 {
     background-position: center;
     background-repeat: no-repeat;
 
-    min-height: 45vh;
-    max-height: 520px;
-
     display:flex;
     justify-content:center;
     align-items:center;
 
     text-align:center;
 
-    padding:5rem 1rem;
-	margin-bottom:3rem;
+    min-height:420px;
+
+    padding:120px 20px 70px;
+
+    margin-top:0;
+    margin-bottom:3rem;
 
     border-radius:0 0 30px 30px;
 }
@@ -1228,26 +1228,36 @@ margin-bottom: 1rem;
 }
 
 /* ---- MOBILE ----- */
-@media (max-width: 768px) {
+@media (max-width:768px){
 
     .ministries-hero{
-        min-height: 300px;
-        padding: 120px 20px 50px;
-        margin-bottom: 2rem;
-        border-radius: 0 0 20px 20px;
+
+        min-height:420px;
+
+        /* increase top padding */
+        padding-top:220px;
+        padding-right:20px;
+        padding-bottom:60px;
+        padding-left:20px;
+
+        align-items:flex-start;
     }
 
     .ministries-hero h1{
-        font-size: 2.2rem;
-        line-height: 1.2;
-		margin-bottom: 15px;
+
+        font-size:2.3rem;
+        margin-bottom:18px;
+        line-height:1.2;
     }
 
     .ministries-hero p{
-        font-size: 1rem;
-        line-height: 1.6;
-        padding: 0 10px;
+
+        font-size:1rem;
+        line-height:1.7;
+        max-width:100%;
     }
+
+}
 
     .ministry-card,
     .ministry-card.reverse{
