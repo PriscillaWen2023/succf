@@ -1562,20 +1562,38 @@ margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {
-    .events-hero {
-        margin-top: 3.5rem;
-        min-height: 250px;
-        padding: 2.5rem 0;
-    }
-    
-    .events-hero h1 {
-        font-size: 2rem;
-    }
-    
-    .events-hero p {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
+/* EVENTS HERO */
+.events-hero {
+    background: linear-gradient(rgba(37, 99, 235, 0.5), rgba(124, 58, 237, 0.55)), url('../images/events-heropic.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    border-radius: 0 0 30px 30px;
+}
+
+.events-hero h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.events-hero p {
+    font-size: 1.2rem;
+    color: white;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+	
     
     .retreat-content h2 {
         font-size: 1.5rem;
