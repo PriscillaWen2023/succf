@@ -1150,7 +1150,8 @@ section h2 {
     background-position: center;
     background-repeat: no-repeat;
 
-    min-height: 400px;
+    min-height: 45vh;
+    max-height: 520px;
 
     display:flex;
     justify-content:center;
@@ -1159,6 +1160,7 @@ section h2 {
     text-align:center;
 
     padding:5rem 1rem;
+	margin-bottom:3rem;
 
     border-radius:0 0 30px 30px;
 }
@@ -1230,8 +1232,7 @@ margin-bottom: 1rem;
 
     .ministries-hero{
         min-height: 300px;
-		hight:auto
-        padding: 140px 20px 60px; /* reduced top padding for mobile */
+        padding: 120px 20px 50px;
         margin-bottom: 2rem;
         border-radius: 0 0 20px 20px;
     }
@@ -1239,12 +1240,12 @@ margin-bottom: 1rem;
     .ministries-hero h1{
         font-size: 2.2rem;
         line-height: 1.2;
+		margin-bottom: 15px;
     }
 
     .ministries-hero p{
         font-size: 1rem;
-        line-height: 1.7;
-		max-width:100%;
+        line-height: 1.6;
         padding: 0 10px;
     }
 
