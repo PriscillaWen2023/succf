@@ -1561,35 +1561,33 @@ margin-bottom: 1rem;
     margin-right: 0.5rem;
 }
 
-/*----- RESPONSIVE       */ 
+/*----- RESPONSIVE */ 
+
+/* Mobile First - Small screens */
 @media (max-width: 768px) {
     .events-hero {
-        min-height:420px;
-
-        /* increase top padding */
-        padding-top:220px;
-        padding-right:20px;
-        padding-bottom:60px;
-        padding-left:20px;
-
-        align-items:flex-start;
+        min-height: 420px;
+        padding-top: 220px;
+        padding-right: 20px;
+        padding-bottom: 60px;
+        padding-left: 20px;
+        align-items: flex-start;
     }
 
     .events-hero h1 {
-
-        font-size:2.3rem;
-        margin-bottom:18px;
-        line-height:1.2;
+        font-size: 2.3rem;
+        margin-bottom: 18px;
+        line-height: 1.2;
     }
 
     .events-hero p {
-        font-size:1rem;
-        line-height:1.7;
-        max-width:100%;
+        font-size: 1rem;
+        line-height: 1.7;
+        max-width: 100%;
     }
-
 }
-	
+
+/* Tablet and small laptops */
 @media (max-width: 992px) {
     .retreat-card {
         grid-template-columns: 1fr;
@@ -1604,8 +1602,7 @@ margin-bottom: 1rem;
     .retreat-content {
         padding: 1.5rem;
     }
-}
-
+    
     .retreat-content h2 {
         font-size: 1.5rem;
     }
@@ -1625,6 +1622,39 @@ margin-bottom: 1rem;
     .btn-register {
         width: 100%;
         justify-content: center;
+    }
+}
+
+/* Large screens - Desktop enhancements */
+@media (min-width: 1200px) {
+    .events-hero {
+        min-height: 55vh;
+        max-height: 600px;
+    }
+    
+    .events-hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .retreat-card {
+        gap: 3.5rem;
+    }
+    
+    .retreat-content {
+        padding: 3rem 3rem 3rem 0;
+    }
+    
+    .retreat-content h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Fix for very large screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
 }
 
